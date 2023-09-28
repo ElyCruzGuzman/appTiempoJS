@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <script src="api.js"></script>
+    <title>App del Tiempo</title>
+    <style>
+        .info {
+            text-align: center;
+            margin: 20px;
+        } 
+
+        #ciudad {
+            text-align: center;
+        }
+        #temperaturas, #datos, #prev, #conta {
+            display: flex;
+            text-align: center;
+            justify-content: space-around;
+        }
+
+        #cambia {
+            background-color: #72d0ff;
+            text-align: center;
+        }
+
+        #estado {
+            text-align: center;
+        }
+
+        #conta {
+            background-color: #ffe072;
+        }
+
+        input[type='button'] {
+            margin: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="info">
+        <label for="nombreCiudad">Introduce el nombre de una ciudad</label>
+        <input type="text" name="nombreCiudad" id="nombreCiudad">
+        </br>
+        <input type="button" value="Previsión del tiempo" id="prevision">
+        <input type="button" value="Contaminación" id="contaminacion">
+        <br />
+        <a href="">Nueva Ciudad</a>
+    </div>
+
+    <div id="cambia">
+        <div id="ciudad"></div>
+        <div id="temperaturas"></div>
+        <div id="estado"></div>
+        <div id="datos"></div>
+        <div id="prev"></div>
+    </div>
+    <div id="conta"></div>
+</body>
+</html>
